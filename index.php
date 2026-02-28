@@ -22,7 +22,7 @@
 
 <body style="background-color: black;">
 <center><audio controls="" loop="true" style="background: rgb(0, 0, 0); padding: 4px; width: 270px; height: 40px; border-radius: 40px; filter: invert(1);">
-  <source src="music/bg-music2.mp3">
+  <source src="music/bg-music3.mp3">
   </audio>
 </center>
   <div id="intro-image-container" class="mt-5 container-fluid d-flex justify-content-center align-items-center">
@@ -36,7 +36,7 @@
   </center>
   <hr />
   <footer class="mt-5 container-fluid d-flex justify-content-center align-items-center">
-	Version 0.1 - &copy; 2026 by sRichtig
+	Version 0.2 - &copy; 2026 by sRichtig
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
