@@ -25,7 +25,7 @@
   <source src="music/bg-music3.mp3">
   </audio>
   <br />
-  <a href="regelwerk/" target="_self" class="button">Zum Regelwerk</a>
+  <button class="button"><a href="regelwerk/" target="_self">Zum Regelwerk</a></button>
 </center>
   <div id="intro-image-container" class="mt-5 container-fluid d-flex justify-content-center align-items-center">
    
