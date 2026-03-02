@@ -36,7 +36,7 @@
   </center>
   <hr />
   <footer class="mt-5 container-fluid d-flex justify-content-center align-items-center">
-	Version 0.2 - &copy; 2026 by sRichtig
+	Version 0.3 - &copy; 2026 by sRichtig
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
