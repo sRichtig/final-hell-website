@@ -21,10 +21,13 @@
 </head>
 
 <body style="background-color: black;">
-<center><audio controls="" loop="true" style="background: rgb(0, 0, 0); padding: 4px; width: 270px; height: 40px; border-radius: 40px; filter: invert(1);">
-  <source src="music/bg-music2.mp3">
-  </audio>
-</center>
+	<center><audio controls autoplay loop="true" style="background: rgb(0, 0, 0); padding: 4px; width: 270px; height: 40px; border-radius: 40px; filter: invert(1);">
+	  <source src="music/bg-music2.mp3">
+	  </audio>
+	</center>
+	<div class="container">
+    <a href="final-hell-regelwerk/" class="btn btn-info">Zum Regelwerk &raquo;</a>
+</div>
   <div id="intro-image-container" class="mt-5 container-fluid d-flex justify-content-center align-items-center">
    
     <a href="https://discord.gg/vsgkq3jA" target="_blank"><img id="intro-image" src="img/intro-image.png" class="img-fluid" alt="Final-Hell SCUM RP"></a>
