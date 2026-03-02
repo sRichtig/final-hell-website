@@ -24,6 +24,8 @@
 <center><audio controls="" loop="true" style="background: rgb(0, 0, 0); padding: 4px; width: 270px; height: 40px; border-radius: 40px; filter: invert(1);">
   <source src="music/bg-music3.mp3">
   </audio>
+  <br />
+  <button type="button" class="btn btn-success"><a href="regelwerk/" target="_self">Zum Regelwerk</a></button>
 </center>
   <div id="intro-image-container" class="mt-5 container-fluid d-flex justify-content-center align-items-center">
    
