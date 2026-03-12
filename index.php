@@ -21,13 +21,13 @@
 <!-- HAUPTSEITE -->
 <div class="wrapper" id="main" style="display:none;">
 
-    <a href="scum/index.html" class="panel">
+    <a href="https://scum.final-hell.de/" class="panel">
         <div class="overlay"></div>
         <img src="assets/img/scum-logo.png" class="logo">
         <h1>SCUM RP</h1>
     </a>
 
-    <a href="dayz/index.html" class="panel">
+    <a href="https://dayz.final-hell.de/" class="panel">
         <div class="overlay"></div>
         <img src="assets/img/dayz-logo.png" class="logo">
         <h1>DAYZ RP</h1>
