@@ -1,3 +1,7 @@
+<?php
+	require_once 'src/counter.php';
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -16,6 +20,7 @@
 <!-- CLICK TO ENTER -->
 <div id="enter">
     <button onclick="startSite()">ENTER FINAL HELL</button>
+	<center>Counter <?php echo $total?></center>
 </div>
 
 <!-- AUDIO -->
