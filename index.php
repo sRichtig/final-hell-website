@@ -1,67 +1,50 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
-	<link rel="shortcut icon" href="/img/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
-	<link rel="manifest" href="/img/site.webmanifest" />
-	<title>Willkommen auf Final-Hell SCUM RP</title>
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<style type="text/css">
-		.blur {
-			filter: blur(2px);
-			transition: filter 0.4s ease;
-		}
-	</style>
+<meta charset="UTF-8">
+<title>Final Hell RP</title>
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body style="background-color: black;">
-<audio controls="" loop="true" style="background: rgb(0, 0, 0); padding: 4px; width: 270px; height: 40px; border-radius: 40px; filter: invert(1);">
-  <source src="music/bg-music3.mp3">
-  </audio>
-<center>
-  <br />
-  <button type="button" class="btn btn-success"><a href="regelwerk/" class="btn" target="_self">Zum Regelwerk</a></button>
-</center>
-  <div id="intro-image-container" class="mt-5 container-fluid d-flex justify-content-center align-items-center">
-   
-    <a href="https://discord.gg/vsgkq3jA" target="_blank"><img id="intro-image" src="img/intro-image.png" class="img-fluid" alt="Final-Hell SCUM RP"></a>
-  </div>
-  <center>
-	<div style="width: 80%">
-		<marquee>Diese Seite befindet sich noch im Aufbau, Benutzung auf eigene Gefahr =) </marquee>
-	</div>
-  </center>
-  <hr />
-  <footer class="mt-5 container-fluid d-flex justify-content-center align-items-center">
-	Version 0.3 - &copy; 2026 by sRichtig
-  </footer>
+<body>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-	function randomBlur() {
-	  let nextTime = Math.random() * 4000 + 1000;
+<!-- CLICK TO ENTER -->
+<div id="enter">
+    <button onclick="startSite()">ENTER FINAL HELL</button>
+</div>
 
-	  setTimeout(() => {
-		$("#intro-image").addClass("blur");
+<!-- AUDIO -->
+<audio id="bgm" loop>
+    <source src="assets/sound/background.mp3" type="audio/mpeg">
+</audio>
 
-		let blurDuration = Math.random() * 1500 + 500;
-		setTimeout(() => {
-		  $("#intro-image").removeClass("blur");
-		  randomBlur(); // erneut starten
-		}, blurDuration);
+<!-- HAUPTSEITE -->
+<div class="wrapper" id="main" style="display:none;">
 
-	  }, nextTime);
-	}
+    <a href="scum/index.html" class="panel">
+        <div class="overlay"></div>
+        <img src="assets/img/scum-logo.png" class="logo">
+        <h1>SCUM RP</h1>
+    </a>
 
-// Start
-randomBlur();
-  </script>
+    <a href="dayz/index.html" class="panel">
+        <div class="overlay"></div>
+        <img src="assets/img/dayz-logo.png" class="logo">
+        <h1>DAYZ RP</h1>
+    </a>
+
+</div>
+
+<script>
+function startSite() {
+    document.getElementById("enter").style.display = "none";
+    document.getElementById("main").style.display = "flex";
+
+    const music = document.getElementById("bgm");
+    music.volume = 0.6;
+    music.play();
+}
+</script>
+
 </body>
 </html>

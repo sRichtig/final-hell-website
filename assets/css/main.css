@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: black;
+    height: 100vh;
+}
+
+/* ENTER SCREEN */
+#enter {
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+        url("../img/fence-bg.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#enter button {
+    padding: 25px 60px;
+    font-size: 28px;
+    letter-spacing: 4px;
+    background: black;
+    color: white;
+    border: 2px solid #666;
+    cursor: pointer;
+}
+
+#enter button:hover {
+    background: #111;
+}
+
+/* MAIN */
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.panel {
+    flex: 1;
+    position: relative;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+        url("../img/fence-bg.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(0,0,0,0.3), rgba(0,0,0,0.9));
+}
+
+.logo {
+    width: 260px;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.panel h1 {
+    z-index: 2;
+    font-size: 42px;
+    letter-spacing: 4px;
+}
+
+.panel:hover {
+    filter: brightness(1.2);
+}
