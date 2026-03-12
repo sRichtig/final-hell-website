@@ -1,5 +1,5 @@
 <?php
-	require_once 'src/counter.php';
+	require 'src/counter.php';
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
 <!-- CLICK TO ENTER -->
 <div id="enter">
     <button onclick="startSite()">ENTER FINAL HELL</button>
-	<center>Counter <?php echo $total?></center>
+	<br />
 </div>
 
 <!-- AUDIO -->
@@ -51,10 +51,13 @@ function startSite() {
     document.getElementById("main").style.display = "flex";
 
     const music = document.getElementById("bgm");
-    music.volume = 0.6;
+    music.volume = 0.3;
     music.play();
 }
 </script>
 
+<footer>
+	<center><small>View-Counter <?php echo $totalViews?></small></center>
+</footer>
 </body>
 </html>
