@@ -1,5 +1,7 @@
 <?php
 	require 'src/counter.php';
+	
+	$lastModified = filemtime('index.php');
 ?>
 
 <!DOCTYPE html>
@@ -51,13 +53,13 @@ function startSite() {
     document.getElementById("main").style.display = "flex";
 
     const music = document.getElementById("bgm");
-    music.volume = 0.3;
+    music.volume = 0.2;
     music.play();
 }
 </script>
 
 <footer>
-	<center><small>View-Counter <?php echo $totalViews?></small></center>
+	<center>&laquo;<small>View-Counter: <?php echo $totalViews . " | " . "Letzte Änderung: " . date("d.m.Y H:i:s", $lastModified); ?>  | &copy; 2026 final-hell.de</small>&raquo;</center>
 </footer>
 </body>
 </html>
