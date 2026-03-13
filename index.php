@@ -1,4 +1,6 @@
 <?php
+	session_start();
+
 	require 'src/counter.php';
 	
 	$lastModified = filemtime('index.php');
